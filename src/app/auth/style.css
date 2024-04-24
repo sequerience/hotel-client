@@ -1,0 +1,46 @@
+
+
+.center {
+    margin: auto;
+    width: auto;
+    padding: 10px;
+  }
+
+.form-container {
+    position: absolute;
+    background-color: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-style {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.select-blocks {
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    background-color: #eff6ff;
+}
+
+.parent {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.decorative {
+    width: 100%;
+    height: 2px;
+    background-color: #000000; /* Задайте желаемый цвет полоски */
+    margin-bottom: 20px; /* Добавьте отступ снизу, чтобы разделить полоску и кнопку */
+}

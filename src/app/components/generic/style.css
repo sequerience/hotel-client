@@ -1,0 +1,226 @@
+.top-left-link {
+    position: absolute;
+    top: 10px;
+    left: 64px;
+  }
+
+.top-left-link-text {
+    position: absolute;
+    top: 25px;
+    left: 144px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+    font-weight:300;
+    font-size: 24px; /* Задаем размер шрифта */
+    color: #eeeeee
+  }
+
+.header_container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-image: url('/alexandriahotelheader.jpg'); /* Путь к фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.top-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    padding: 20px;
+    background-image: url('/alexandriahotelheader.png'); /* Путь к фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Минимальная высота блока */
+    width: 100%;
+    filter: contrast(105%); /* Увеличение контраста на 50% */
+}
+
+
+.top-container::before {
+    content: ''; /* Необходимо для создания псевдоэлемента */
+    position: absolute; /* Позиционирование относительно .top-container */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(21, 16, 41, 0.45); /* Полупрозрачный черный цвет */
+    z-index: 0; /* Помещаем затемнение под содержимое блока */
+}
+
+
+.image-stars {
+position: absolute;
+top: 150px; /* Измените это значение, чтобы поднять или опустить изображение */
+}
+
+.top-left-center-text {
+    position: absolute;
+    top: 175px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+    font-weight:300;
+    font-size: 36px; /* Задаем размер шрифта */
+    color: #eeeeee
+}
+  
+.top-left-center-two-text {
+    position: absolute;
+    top: 235px;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+    font-weight:300;
+    font-size: 14px; /* Задаем размер шрифта */
+    color: #eeeeee
+  }
+
+//*DALEE*//
+.login-button {
+    top: 25px;
+    right: 20px;
+  }
+  
+  .gallery-button {
+    top: 25px;
+    right: 90px;
+  }
+  
+  .breakfast-button {
+    top: 25px;
+    right: 256px;
+  }
+  
+  .contacts-button {
+    top: 25px;
+    right: 380px;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+    font-weight:300;
+    font-size: 24px; /* Задаем размер шрифта */
+    color: #eeeeee
+  }
+  
+  .button::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: rgb(238, 238, 238);
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover::after {
+    width: 25%;
+  }
+  
+  .button:active {
+    outline: 1px solid rgb(238, 238, 238);
+  }
+  
+.decorative-stripe {
+  height: 10px;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+}
+
+.decorative-stripe:after {
+  content: "";
+  position: absolute;
+}
+
+.insta-icon {
+    width: 64px;
+    height: 64px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.insta-icon:hover {
+    box-shadow: 0 0 0 1px white;
+}
+
+.row{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Выравнивание элементов по горизонтали */
+  align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.card {
+  flex: 1 0 21%; /* Минимальная ширина карточки, например 21% */
+  margin: 2px; /* Отступы между карточками */
+  padding: 25px 2px 0px 0px;
+}
+
+.divWithShadow {
+  box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.25); /* Горизонтальное смещение | Вертикальное смещение | Размытие | Растяжение | Цвет */
+}
+
+.booking-button {
+  width: 325px;
+}
+
+.card-title-text {
+  line-height: 2;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+  font-weight:900;
+  font-size: 14px; /* Задаем размер шрифта */
+  color: #0f172a
+}
+
+.card-description-text {
+  line-height: 1.5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+  font-weight:300;
+  font-size: 14px; /* Задаем размер шрифта */
+  color: #0f172a
+}
+
+.icons-style {
+  color: #0FF000;
+}
+
+.card-footer {
+  flex: 1 0 21%; /* Минимальная ширина карточки, например 21% */
+  margin: 25px; /* Отступы между карточками */
+  padding: 25px 0px 25px 35px;
+}
